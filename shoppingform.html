@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<header class="main-header">
+  <div class="nav-desktop">
+    <nav>
+
+      <img src="images/WiderWorld3.png" alt="logo">
+      <div id="inicio">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre nosotros</a>
+      <a href="index.html#trips">Nuestros destinos</a>
+      
+        <a href="login.html"><button>Iniciar sesión</button></a>
+        <a href="signIn.html"><button>Registrate</button></a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-mobile">
+    <label for="btn-nav" class="btn-nav"> <img src="images/menu-hamburguesa.png" alt="menu"></label>
+    <input type="checkbox" id="btn-nav">
+    
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="index.html#trips">Nuestros destinos</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="signIn.html">Registrate</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+</header>
+  
+<body>
+
+    <h1>Reserva tu viaje</h1>
+    <p>Introduce tu nombre y apellidos completos tal y como aparecen en tus documentos: este nombre servirá para proseguir con la compra de los servicios y los seguros del viaje. Si el nombre no se corresponde con el de los documentos, WiderWorld no se hace responsable. Todos los datos introducidos deben ser de diferentes, de lo contrario, la reserva podría ser anulada sin derecho al reembolso.</p>
+
+    <!--TIPO DE PAQUETE & NÚMERO DE PASAJEROS-->
+    <section>
+        <form>
+            <label for="paquete">Seleccione el paquete de viaje:</label>
+            <select name="paquete" id="paquete">
+                <option value="oro">Paquete Oro</option>
+                <option value="plata">Paquete Plata</option>
+                <option value="bronce">Paquete Bronce</option>
+            </select><br>
+            <label for="passengers">Número de pasajeros:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10">
+        </form>
+    </section>
+
+    <!--INFO CLIENTE-->
+    <section>
+            <form>
+                <h2>Información general</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+
+                <label for="phone">Teléfono celular:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="id">DNI or NIE:</label>
+                <input type="text" id="id" name="id" required><br>
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required><br>
+
+                <label for="emergency">Contacto de emergencia:</label>
+                <input type="tel" id="emergency" name="emergency" required><br>
+                <label for="necesidades">Necesidades especiales:</label><br>
+                <textarea id="necesidades" name="necesidades"></textarea>
+    
+    <!--PAGO-->
+                <h2>Información de pago</h2>
+            <label for="tarjeta">Nombre de la tarjeta:</label>
+            <input type="text" id="nombretarjeta" name="nombretarjeta" required>
+            <br>
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+            <br>
+            <label for="fecha">Fecha de Vencimiento:</label>
+            <input type="month" id="fecha" name="fecha" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" required>
+            <br>
+            <h2>1599€</h2>
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto los términos y condiciones de la compra</label>
+          <br>
+          <button type="submit">
+            <a id="btnAction" href="confirmationSignIn.html">
+            Pagar
+            </a>
+        </button>
+        
+    </form>
+      
+</body>
+
+<footer>
+  
+  <div class="footer">
+    <!-- IZQUIERDA -->
+  <div class="footer-left">
+    <ul>
+      <li class="footer-title-li">WIDER WORLD</li>
+      <li class="footer-li">+34 634 753 2021</li>
+      <li class="footer-li">Wider-World@viajes.com</li>
+      <li class="footer-li">Av. del Bogatell, 82, 08005 Barcelona</li>
+    </ul>
+  </div>
+  <!-- SECCIÓN DERECHA -->
+  <div class="footer-right">
+    <p id="copyr">Copyright © 2023 Wider World, All Rights Reserved</p>
+        <a class="socials" href="#"><img src="images/vectorfb.png" alt="facebook"></a>
+        <a class="socials" href="#"><img src="images/Vectorinst.png" alt="Instagram"></a>
+        <a class="socials" href="#"><img src="images/Vectortwt.png" alt="twitter"></a>
+  </div>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <title>Inicio</title>
+</head>
+
+<header class="main-header">
+  <div class="nav-desktop">
+    <nav>
+
+      <img src="images/WiderWorld3.png" alt="logo">
+      <div id="inicio">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre nosotros</a>
+      <a href="index.html#trips">Nuestros destinos</a>
+      
+        <a href="login.html"><button>Iniciar sesión</button></a>
+        <a href="signIn.html"><button>Registrate</button></a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-mobile">
+    <label for="btn-nav" class="btn-nav"> <img src="images/menu-hamburguesa.png" alt="menu"></label>
+    <input type="checkbox" id="btn-nav">
+    
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="index.html#trips">Nuestros destinos</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="signIn.html">Registrate</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+</header>
+<body>
+
+
+
+  <main>
+    <!--CAROUSEL-->
+    <div class="slider">
+      <ul>
+          <li><img src="images/Aliens.jpeg" alt="Imagen de humanos viviendo con aliens">
+           
+              <h3 class="onImage">Ellos ya vivien entre nosotros</h3>
+             
+          </li>
+          <li><img src="images/Atlantis.jpeg" alt="Imagen de un mundo bajo el agua">
+            <h3 class="onImage">Que no es solo fantasía, hemos encontrado Atlantis!</h3>
+          </li>
+          <li><img src="images/Dinosaurios.jpeg" alt="Imagen de humanos viviendo con dinosaurios">
+            <h3 class="onImage">El safari al estilo Parque Jurasico ha llegado!</h3>
+          </li>
+          <li><img src="images/Hitler.jpeg" alt="Imagen donde imaginamos la vida si Hitler hubiese ganado">
+            <h3 class="onImage">Hitler ganó la guerra, ven a conocer su visión del mundo</h3>
+          </li>
+          <li><img src="images/Mamuts.jpeg" alt="Imagen donde vemos dos mamuts luchando en nuestro safari">
+            <h3 class="onImage">Ven a conocer a los legendarios Mamuts y mas especies de la hera de hielo</h3>
+          </li>
+          <li><img src="images/Roma.jpeg" alt="Imagen de un imperio romano en la actualidad">
+            <h3 class="onImage">El imperio Romano nunca cayo, ven a conocerlo en su mejor versión!</h3>
+          </li>
+      </ul>
+  </div>
+    <div>
+      <!---Search bar-->
+      <form class="search-bar">
+        <input type="Text" placeholder="Origen">
+        <input type="Text" placeholder="Destino">
+        <label for="fecha-ida">Fecha de ida:</label>
+        <input type="date" id="fecha-ida" placeholder="Fecha de regreso" name="fecha-ida">
+        <label for="regreso">Fecha de regreso:</label>
+        <input type="date" id="regreso" name="regreso" placeholder="Fecha de regreso">
+        <input type="number" Placeholder="Número de pasajeros" min="1" max="20">
+        <button type="submit"> Buscar</button>
+      </form>
+    </div>
+  </main>
+  <section>
+    <div class="containerCards" id="trips">
+      <div class="card">
+        <img src="images/OI.jpg" width=300px height=200px  alt="">
+        <h3>Los alienígenas llegaron</h3>
+        <p>Observa la espectacular vida extraterrestre</p>
+        <button type="submit">
+          <a id="btnAction" href="aliens.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+      <div class="card">
+        <img src="images/atlantis2.jpg" width=300px height=200px  alt="">
+        <h3>¡Atlantis es real!</h3>
+        <p>Explora la ciudad sumergida de Atlantis</p>
+        <button type="submit">
+          <a id="btnAction" href="atlantis.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+      <div class="card">
+        <img src="images/dino2.jpg" width=300px height=200px  alt="">
+        <h3>El safari Jurásico ha llegado</h3>
+        <p>Ven a ver un dinosaurio por ti mismo</p>
+        <button type="submit">
+          <a id="btnAction" href="dinosaurios.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+      <div class="card">
+        <img src="images/nazi.jpg" width=300px height=200px  alt="">
+        <h3>Alemania gano la guerra...</h3>
+        <p>Conoce el sueño de Hitler hecho realidad</p>
+        <button type="submit">
+          <a id="btnAction" href="hitler.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+      <div class="card">
+        <img src="images/mamut2.jpg" width=300px height=200px  alt="">
+        <h3>Un safari polar prehistórico</h3>
+        <p>Ya no los cazamos, ahora los preservamos</p>
+        <button type="submit">
+          <a id="btnAction" href="eradehielo.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+      <div class="card">
+        <img src="images/roma2.jpg" width=300px height=200px alt="">
+        <h3>El imperio romano sigue en pie</h3>
+        <p>Super desarrollado, en ruinas nunca más.</p>
+        <button type="submit">
+          <a id="btnAction" href="roma.html">
+          ¡Reserva ya!
+          </a>
+      </button>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+  
+  <div class="footerIndex">
+    <!-- IZQUIERDA -->
+  <div class="footer-left">
+    <ul>
+      <li class="footer-title-li">WIDER WORLD</li>
+      <li class="footer-li">+34 634 753 2021</li>
+      <li class="footer-li">Wider-World@viajes.com</li>
+      <li class="footer-li">Av. del Bogatell, 82, 08005 Barcelona</li>
+    </ul>
+  </div>
+  <!-- SECCIÓN DERECHA -->
+  <div class="footer-right">
+    <p id="copyr">Copyright © 2023 Wider World, All Rights Reserved</p>
+        <a class="socials" href="#"><img src="images/vectorfb.png" alt="facebook"></a>
+        <a class="socials" href="#"><img src="images/Vectorinst.png" alt="Instagram"></a>
+        <a class="socials" href="#"><img src="images/Vectortwt.png" alt="twitter"></a>
+  </div>
+  </div>
+</footer>
+
+</html>
